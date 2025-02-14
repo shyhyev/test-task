@@ -26,7 +26,7 @@ This is a Laravel project that uses **Filament** as the admin panel and **L5-Swa
 
 - PHP 8.2
 - Composer
-- Node.js and NPM (for frontend assets, if applicable)
+- Node.js and NPM
 - MySQL, PostgreSQL, or SQLite
 
 ---
