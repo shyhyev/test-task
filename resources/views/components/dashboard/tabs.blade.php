@@ -1,6 +1,5 @@
 <div x-data="{ current: '{{ $current }}' }" class="flex justify-center overflow-x-auto overflow-y-hidden border-b border-gray-200 whitespace-nowrap">
-    <a
-            :href="current === 'project' ? '' : '{{ route("dashboard.profile") }}'"
+    <a :href="current === 'profile' ? '#' : '{{ route("dashboard.profile") }}'"
             :class="current === 'profile' ? 'text-blue-600 border-blue-500' : 'text-gray-700 border-transparent'"
             class="inline-flex cursor-pointer items-center h-10 px-2 py-2 -mb-px text-center bg-transparent border-b-2 sm:px-4 -px-1 whitespace-nowrap focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-1 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -12,8 +11,7 @@
         </span>
     </a>
 
-    <a
-            :href="current === 'password' ? '' : '{{ route("dashboard.password") }}'"
+    <a :href="current === 'password' ? '#' : '{{ route("dashboard.password") }}'"
             :class="current === 'password' ? 'text-blue-600 border-blue-500' : 'text-gray-700 border-transparent'"
             class="inline-flex cursor-pointer items-center h-10 px-2 py-2 -mb-px text-center bg-transparent border-b-2 sm:px-4 -px-1 whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
@@ -25,17 +23,16 @@
         </span>
     </a>
 
-    <a
-            :href="current === 'news' ? '' : '{{ route("dashboard.profile") }}'"
+    <a :href="current === 'news' ? '#' : '{{ route("dashboard.news") }}'"
             :class="current === 'news' ? 'text-blue-600 border-blue-500' : 'text-gray-700 border-transparent'"
-            class="inline-flex cursor-pointer items-center h-10 px-2 py-2 -mb-px text-center text-gray-700 bg-transparent border-b-2 border-transparent sm:px-4 -px-1 whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
+            class="inline-flex cursor-pointer items-center h-10 px-2 py-2 -mb-px text-center bg-transparent border-b-2 sm:px-4 -px-1 whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
             <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
             <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
         </svg>
 
         <span class="mx-1 text-sm sm:text-base">
-            My news
+            Publish news
         </span>
     </a>
 

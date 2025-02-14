@@ -12,7 +12,7 @@ class NewsList extends Component
 
     public function render()
     {
-        $news = News::select(["id", "title", "image", "created_at"])->latest()->paginate(6);
+        $news = News::select(["id", "title", "image", "created_at"])->latest()->paginate(4);
 
         return view('components.news-list', [
             'news' => $news

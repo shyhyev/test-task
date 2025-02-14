@@ -29,11 +29,16 @@ class News extends Model
         });
     }
 
+    public function getAuthorName(): string
+    {
+        return $this->author?->name  ?? "Admin";
+    }
+
 
     // Relations
 
     public function author(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, "user_id");
     }
 }

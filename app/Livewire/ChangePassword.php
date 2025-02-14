@@ -26,6 +26,9 @@ class ChangePassword extends Component
             "password" => $this->password
         ]);
 
+        $this->password = "";
+        $this->password_confirmation = "";
+
         session()->flash('status', 'Password successfully changed.');
     }
 }
